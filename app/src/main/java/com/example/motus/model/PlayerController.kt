@@ -6,9 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.example.motus.controller.DataMons
 
-/**
-* Class for managing the player's state.
- * */
+
 class PlayerController : ViewModel() {
 
     val TAG:String= "LogPlayer"

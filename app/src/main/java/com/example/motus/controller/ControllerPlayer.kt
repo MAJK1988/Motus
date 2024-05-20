@@ -3,7 +3,9 @@ package com.example.motus.controller
 import android.util.Log
 import androidx.compose.runtime.MutableState
 import com.example.motus.model.PlayerController
-
+/**
+ * Class for managing the player's state.
+ * */
 class ControllerPlayer {
 
     companion object {
