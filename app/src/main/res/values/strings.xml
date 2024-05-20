@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Motus</string>
+    <string name="play_button">play_button</string>
+    <string name="attempts_number">attempts_number</string>
+    <string name="attempts_number_text">attempts_number_text</string>
+    <string name="text_input">text_input</string>
+    <string name="edit_text_input">edit_text_input</string>
+    <string name="button_text_input">button_text_input</string>
+    <string name="message_widget">message_widget</string>
+    <string name="message_widget_text">message_widget_text</string>
+    <string name="message_widget_button">message_widget_button</string>
+</resources>
