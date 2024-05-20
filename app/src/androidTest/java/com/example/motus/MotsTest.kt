@@ -1,5 +1,4 @@
 package com.example.motus
-
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -22,7 +21,7 @@ import org.junit.Rule
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class MotsTest {
     @get:Rule
     val composeTestRule = createAndroidComposeRule<MainActivity>()
     @Test
@@ -57,9 +56,9 @@ class ExampleInstrumentedTest {
         composeTestRule.onNodeWithTag(composeTestRule.activity.getString(R.string.message_widget_text)).assertIsDisplayed()
         composeTestRule.onNodeWithTag(composeTestRule.activity.getString(R.string.message_widget_text)).assertTextEquals(
             "You have lost the game. Better luck next time! \n" +
-                "Reason: You chose this word before. \n"+
-                "Selected Word: ABAQUE. \n"+
-                "Click OK to start again.")
+                    "Reason: You chose this word before. \n"+
+                    "Selected Word: ABAQUE. \n"+
+                    "Click OK to start again.")
         //Check exist button
         composeTestRule.onNodeWithTag(composeTestRule.activity.getString(R.string.message_widget_button)).assertIsDisplayed()
         composeTestRule.onNodeWithTag(composeTestRule.activity.getString(R.string.message_widget_button)).performClick()
