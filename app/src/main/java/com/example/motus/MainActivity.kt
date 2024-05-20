@@ -10,7 +10,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
-import com.example.motus.model.DataMons
+import com.example.motus.controller.DataMons
 import com.example.motus.model.PlayerController
 import com.example.motus.ui.theme.MotusTheme
 import com.example.motus.view.ScreenView

@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.*
 import androidx.compose.ui.unit.dp
 import com.example.motus.R
+import com.example.motus.controller.ControllerPlayer
 import com.example.motus.model.PlayerController
 import com.example.motus.ui.theme.Pink40
 /***
@@ -83,7 +84,7 @@ class ScreenView {
                     word = player.value!!.newWord, context = context
                 ) { newValue ->
                     run {
-                        player.value!!.addWordAndUpdateState(newValue)//Add New Mon to player
+                        ControllerPlayer.updatePlayerState(newValue, player)
                         if (!player.value!!.canComplete || player.value!!.isWin) {
                             shortMessage.value =
                                 true// Show short message if game is won or cannot be completed
@@ -101,7 +102,7 @@ class ScreenView {
                     run {
                         shortInputMon.value = false // Clear input dialog state
                         shortMessage.value = false // Clear message dialog state
-                        player.value!!.clear() // Clear player state
+                        ControllerPlayer.clear(player) // Clear player state
                     }
                 }
             }

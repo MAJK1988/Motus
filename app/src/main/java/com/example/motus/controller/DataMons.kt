@@ -1,4 +1,4 @@
-package com.example.motus.model
+package com.example.motus.controller
 
 import android.content.Context
 import android.util.Log
